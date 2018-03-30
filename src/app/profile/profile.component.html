@@ -1,0 +1,7 @@
+<div *ngIf="userInfo !== null">
+  <p>{{ userInfo.name }}</p>
+  <p>{{ userInfo.username }}</p>
+  <p appBold>{{ userInfo.phone }}</p>
+
+  <app-banner [company]="userInfo.company"></app-banner>
+</div>

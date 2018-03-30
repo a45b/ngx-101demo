@@ -1,0 +1,7 @@
+<h1 #lable>List</h1>
+<input type="text" [(ngModel)]="searchText">
+<ul>
+  <li #list *ngFor="let user of users | filter: searchText">
+    <a routerLink="{{ user.id }}">{{ user.name }}</a>
+  </li>
+</ul>
